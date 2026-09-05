@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paid Video Lead Engine | Outwork Social</title>
+<meta name="description" content="One filming day. 30 video ads. 90 days of Meta lead generation. We turn ad spend into qualified enquiries for service businesses.">
+<meta property="og:title" content="Paid Video Lead Engine | Outwork Social">
+<meta property="og:description" content="From filming day to flooding your business with leads.">
+<meta name="theme-color" content="#07070B">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logos/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/logos/favicon-180.png">
+
+<!-- ═══════════ Meta Pixel ═══════════ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','718400200187046');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=718400200187046&ev=PageView&noscript=1" alt=""/></noscript>
+<!-- ═══════════ End Meta Pixel ═══════════ -->
+<!-- BODY FONT: Aktiv Grotesk, live from your Adobe Fonts web project -->
+<link rel="stylesheet" href="https://use.typekit.net/mml4jvv.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- DISPLAY FONT — Neue Plak ExtraBlack, self-hosted (see @font-face in the CSS) -->
+<link rel="preload" href="assets/fonts/NeuePlak-ExtraBlack.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     ⚙️  CONFIG — LANDING PAGE. Two things to fill in.
+     ═══════════════════════════════════════════════════════════════════ -->
+<script>
+window.CONFIG = {
+
+  // 1️⃣  VIMEO — just the number from your video's URL.
+  //     vimeo.com/123456789          →  VIMEO_ID: "123456789"
+  //     vimeo.com/123456789/ab12cd34 →  also set VIMEO_HASH: "ab12cd34"
+  VIMEO_ID:   "1191513402",
+  VIMEO_HASH: "",
+
+  // 2️⃣  Where the "Book your strategy call" buttons go.
+  //     Leave as-is if apply.html sits next to this file.
+  APPLY_URL: "apply.html"
+};
+</script>
+
+<style>
+/* ══════════ FONTS ══════════
+   Body  : Aktiv Grotesk (Adobe Fonts) — needs your Typekit kit link in <head>.
+           Falls back to Figtree (the previous face) so nothing regresses.
+   Display: Neue Plak ExtraBlack — self-hosted from /assets/fonts.
+*/
+@font-face{
+  font-family:'Neue Plak ExtraBlack';
+  src:url('assets/fonts/NeuePlak-ExtraBlack.woff2') format('woff2'),
+      url('assets/fonts/NeuePlak-ExtraBlack.ttf') format('truetype');
+  font-weight:400;font-style:normal;font-display:swap;
+}
+
+/* ══════════ TOKENS ══════════ */
+:root{
+  --blue:#5370FE;
+  --pink:#FD66C5;
+  --grad:linear-gradient(97deg,#5370FE 0%,#8A6BEC 48%,#FD66C5 100%);
+  --bg:#07070B;
+  --bg-2:#0B0B12;
+  --surface:#101019;
+  --surface-2:#15151F;
+  --raise:#1A1A26;
+  --ink:#F5F5FA;
+  --ink-2:#C8CADA;
+  --muted:#878BA3;
+  --faint:#63667C;
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.16);
+  --font-body:"aktiv-grotesk","Figtree",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --font-display:"Neue Plak ExtraBlack","aktiv-grotesk","Figtree",Impact,"Arial Black",sans-serif;
+  --radius:22px;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 16px 44px -16px rgba(0,0,0,.85);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.5),0 40px 90px -30px rgba(83,112,254,.35);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-body);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+a{color:inherit}
+::selection{background:rgba(253,102,197,.35);color:#fff}
+
+/* ══════════ LAYOUT ══════════ */
+.wrap{width:min(1120px,92vw);margin-inline:auto}
+.narrow{width:min(760px,92vw);margin-inline:auto}
+section{position:relative}
+.pad{padding:clamp(64px,9vw,120px) 0}
+.pad-sm{padding:clamp(48px,6vw,80px) 0}
+.center{text-align:center}
+
+/* ══════════ TYPE ══════════ */
+h1,h2,h3{
+  margin:0;font-family:var(--font-display);font-weight:400;
+  letter-spacing:-.018em;line-height:1.06;
+  font-synthesis-weight:none;-webkit-font-synthesis:none;
+}
+h1{font-size:clamp(34px,5.6vw,60px)}
+h2{font-size:clamp(29px,4.4vw,48px)}
+h3{font-size:clamp(19px,2.2vw,24px);letter-spacing:-.02em;line-height:1.25}
+
+/* accent span: same display face, gradient fill carries the emphasis */
+.ital{
+  font-family:var(--font-display);font-weight:400;font-style:normal;
+  text-transform:uppercase;letter-spacing:-.004em;
+  font-size:1em;line-height:1;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  padding-right:.04em;
+}
+.lede{
+  color:var(--muted);font-size:clamp(16px,1.7vw,18.5px);line-height:1.64;
+  max-width:56ch;margin:20px auto 0;
+}
+.lede.left{margin-inline:0}
+.tiny{font-size:13.5px;color:var(--faint);line-height:1.55}
+strong{color:var(--ink);font-weight:700}
+em{color:var(--ink-2)}
+
+/* ══════════ BADGES / LABELS ══════════ */
+.badge{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:9px 20px;border-radius:999px;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.035);
+  font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-2);backdrop-filter:blur(6px);
+}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--grad);flex:none;
+  box-shadow:0 0 10px rgba(253,102,197,.9)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:#9FA6FF;margin-bottom:22px;
+}
+.eyebrow::before,.eyebrow::after{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28))}
+.eyebrow::after{background:linear-gradient(90deg,rgba(255,255,255,.28),transparent)}
+.eyebrow.dotted::before,.eyebrow.dotted::after{display:none}
+.eyebrow.dotted{gap:9px}
+.eyebrow.dotted i{width:7px;height:7px;border-radius:50%;background:var(--grad);display:block;
+  box-shadow:0 0 10px rgba(253,102,197,.9)}
+
+/* ══════════ SECTION KICKER ══════════
+   Big display label that says whose numbers the section is showing.
+   Deliberately a step smaller than the h2 under it so it labels rather
+   than competes. */
+.kicker{
+  display:block;font-family:var(--font-display);font-weight:400;
+  text-transform:uppercase;letter-spacing:-.012em;line-height:1;
+  font-size:clamp(21px,2.9vw,32px);
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin:0 0 14px;font-synthesis-weight:none;
+}
+
+/* ══════════ BUTTONS ══════════ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:11px;
+  padding:19px 40px;border-radius:999px;border:0;cursor:pointer;
+  background:var(--grad);color:#fff;
+  font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  text-decoration:none;position:relative;isolation:isolate;
+  box-shadow:0 12px 40px -8px rgba(120,90,240,.75),0 0 0 1px rgba(255,255,255,.08) inset;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1),box-shadow .18s,filter .18s;
+}
+.btn::after{content:"→";font-size:15px;letter-spacing:0;transition:transform .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 20px 54px -10px rgba(140,100,250,.85),0 0 0 1px rgba(255,255,255,.12) inset}
+.btn:hover::after{transform:translateX(4px)}
+.btn:active{transform:translateY(0)}
+.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2);box-shadow:none}
+.btn.ghost::after{content:""}
+.btn.ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.05)}
+
+/* ══════════ HERO ══════════ */
+.hero{padding-top:clamp(30px,5vw,54px);padding-bottom:clamp(40px,5vw,64px);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-24% -20% auto -20%;height:900px;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(42% 40% at 20% 20%,rgba(83,112,254,.36),transparent 70%),
+    radial-gradient(40% 38% at 82% 30%,rgba(253,102,197,.30),transparent 70%),
+    radial-gradient(60% 44% at 50% 0%,rgba(138,107,236,.20),transparent 72%);
+  filter:blur(24px);
+}
+.hero .wrap{position:relative;z-index:1}
+.brandbar{display:flex;justify-content:center;padding:26px 0 30px}
+.logo{display:inline-flex;align-items:center;text-decoration:none;line-height:0}
+.logo img{height:34px;width:auto;display:block}
+footer .logo img{height:28px}
+.apply-top .logo img{height:30px}
+@media (max-width:620px){.logo img{height:27px}footer .logo img{height:24px}.apply-top .logo img{height:25px}}
+
+/* ══════════ VIDEO ══════════ */
+.video-shell{position:relative;margin:clamp(34px,4.5vw,52px) auto 0;width:min(880px,92vw)}
+.video-shell::before{
+  content:"";position:absolute;inset:-30px;border-radius:38px;z-index:0;
+  background:var(--grad);opacity:.34;filter:blur(46px);
+}
+.video-frame{
+  position:relative;z-index:1;border-radius:18px;overflow:hidden;
+  aspect-ratio:16/9;background:#000;
+  box-shadow:0 0 0 1px rgba(255,255,255,.10),0 40px 90px -30px rgba(0,0,0,.9);
+}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-ph{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:16px;text-align:center;padding:24px;
+  background:radial-gradient(90% 90% at 50% 40%,#1B1D33,#08080D);color:#fff;
+}
+.video-ph .ring{
+  width:74px;height:74px;border-radius:50%;background:var(--grad);
+  display:grid;place-items:center;box-shadow:0 14px 44px -6px rgba(120,90,240,.95);
+}
+.video-ph .ring svg{width:26px;height:26px;margin-left:4px;fill:#fff}
+.video-ph b{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.video-ph small{font-size:13px;color:var(--muted);max-width:36ch;line-height:1.5}
+.unmute{
+  position:absolute;inset:0;z-index:2;display:grid;place-items:center;cursor:pointer;
+  background:rgba(4,4,8,.28);border:0;width:100%;
+  transition:background .2s,opacity .25s;
+}
+.unmute:hover{background:rgba(4,4,8,.42)}
+.unmute .pill{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  padding:26px 40px;border-radius:20px;
+  background:linear-gradient(135deg,rgba(83,112,254,.92),rgba(253,102,197,.92));
+  backdrop-filter:blur(6px);color:#fff;text-align:center;
+  box-shadow:0 20px 56px -12px rgba(0,0,0,.75);
+}
+.unmute .pill svg{width:34px;height:34px;fill:#fff}
+.unmute .pill b{font-size:19px;font-weight:800;line-height:1.3;letter-spacing:-.015em}
+.unmute[hidden]{display:none}
+
+/* ══════════ QUIZ ══════════ */
+.quiz-anchor{scroll-margin-top:24px}
+.quiz{
+  position:relative;width:min(700px,92vw);margin:clamp(30px,4vw,44px) auto 0;
+  background:linear-gradient(180deg,var(--surface),var(--bg-2));
+  border:1px solid var(--line-2);border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);overflow:hidden;
+}
+.quiz .bar{height:4px;background:rgba(255,255,255,.08)}
+.quiz .bar i{display:block;height:100%;width:20%;background:var(--grad);
+  box-shadow:0 0 18px rgba(140,100,250,.9);transition:width .42s cubic-bezier(.4,0,.2,1)}
+.quiz .body{padding:clamp(30px,4.5vw,48px) clamp(24px,4.5vw,52px) clamp(26px,3.5vw,38px)}
+.q-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:16px}
+.q-head .l{display:flex;align-items:center;gap:13px;font-size:11px;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
+.q-head .l b{color:#9FA6FF;font-weight:800}
+.q-head .l s{width:22px;height:1px;background:rgba(255,255,255,.2);text-decoration:none;display:block}
+.q-head .r{font-size:11.5px;font-weight:700;letter-spacing:.1em;color:var(--faint);white-space:nowrap}
+.q-title{font-family:var(--font-display);font-size:clamp(22px,3.1vw,31px);font-weight:400;
+  letter-spacing:-.018em;line-height:1.16;margin:0;font-synthesis-weight:none}
+.q-sub{color:var(--muted);font-size:15.5px;margin:11px 0 0}
+.q-note{
+  display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+  padding:7px 15px;border-radius:999px;background:rgba(255,255,255,.06);
+  border:1px solid var(--line);
+  font-size:12.5px;font-weight:600;color:var(--ink-2);
+}
+.q-note i{width:6px;height:6px;border-radius:50%;background:var(--grad);display:block;flex:none}
+.q-body{margin-top:28px;min-height:186px}
+
+/* choice options */
+.opts{display:grid;gap:11px}
+.opt{
+  display:flex;align-items:center;gap:15px;width:100%;text-align:left;
+  padding:17px 20px;border-radius:15px;cursor:pointer;
+  background:rgba(255,255,255,.035);border:1.5px solid var(--line);
+  font-size:16.5px;font-weight:600;letter-spacing:-.01em;color:var(--ink);
+  transition:border-color .15s,background .15s,transform .12s,box-shadow .15s;
+}
+.opt:hover{border-color:rgba(159,166,255,.5);background:rgba(255,255,255,.07);transform:translateX(3px)}
+.opt .key{
+  width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;
+  background:rgba(255,255,255,.08);color:var(--muted);font-size:11.5px;font-weight:800;
+  transition:background .15s,color .15s;
+}
+.opt[aria-checked="true"]{
+  border-color:transparent;background:rgba(120,90,240,.16);
+  box-shadow:0 0 0 2px var(--blue),0 12px 34px -12px rgba(120,90,240,.9);
+}
+.opt[aria-checked="true"] .key{background:var(--grad);color:#fff}
+
+/* text inputs */
+.field{position:relative;margin-top:6px}
+.field input{
+  width:100%;padding:14px 2px 15px;border:0;border-bottom:2px solid rgba(255,255,255,.18);
+  background:transparent;font-size:clamp(19px,2.6vw,25px);font-weight:600;
+  letter-spacing:-.02em;color:var(--ink);outline:none;
+  transition:border-color .2s;font-family:inherit;
+}
+.field input::placeholder{color:#4E5167;font-weight:500}
+.field input:focus{border-bottom-color:var(--blue);box-shadow:0 2px 18px -6px rgba(83,112,254,.9)}
+.field.err input{border-bottom-color:#FF5C63}
+.err-msg{color:#FF7A80;font-size:13.5px;font-weight:600;margin-top:10px;min-height:19px}
+input:-webkit-autofill{-webkit-text-fill-color:var(--ink);transition:background-color 9999s}
+
+/* nav */
+.q-nav{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  margin-top:28px;padding-top:22px;border-top:1px solid var(--line);
+}
+.back{
+  background:none;border:0;cursor:pointer;padding:8px 0;
+  font-size:11.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);
+  transition:color .15s;
+}
+.back:hover{color:var(--ink)}
+.back[hidden]{visibility:hidden;display:block}
+.q-nav .right{display:flex;align-items:center;gap:20px}
+.enter-hint{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#4E5167}
+.cont{
+  display:inline-flex;align-items:center;gap:9px;border:0;cursor:pointer;
+  padding:14px 30px;border-radius:999px;background:var(--grad);color:#fff;
+  font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  box-shadow:0 10px 28px -8px rgba(120,90,240,.85);
+  transition:transform .16s,opacity .16s,box-shadow .16s;
+}
+.cont::after{content:"→";letter-spacing:0;font-size:14px}
+.cont:hover:not(:disabled){transform:translateY(-1px)}
+.cont:disabled{background:rgba(255,255,255,.09);color:#5A5D74;box-shadow:none;cursor:not-allowed}
+
+/* success */
+.done{text-align:center;padding:clamp(38px,5vw,60px) clamp(24px,4vw,44px)}
+.done .tick{
+  width:66px;height:66px;border-radius:50%;background:var(--grad);margin:0 auto 24px;
+  display:grid;place-items:center;box-shadow:0 16px 44px -10px rgba(120,90,240,.95);
+}
+.done .tick svg{width:28px;height:28px;stroke:#fff;stroke-width:3.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.done h3{font-size:clamp(24px,3.4vw,32px);font-weight:800;letter-spacing:-.03em}
+.done p{color:var(--muted);margin:14px auto 0;max-width:44ch;font-size:16px}
+.done .recap{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:26px}
+.done .recap span{
+  padding:8px 15px;border-radius:999px;background:rgba(255,255,255,.07);
+  border:1px solid var(--line);
+  font-size:12.5px;font-weight:700;color:var(--ink-2);
+}
+
+/* ══════════ STAT TILES ══════════ */
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  width:min(700px,92vw);margin:22px auto 0;
+  border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden;
+}
+.stats div{padding:24px 16px;text-align:center;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{
+  display:block;font-family:var(--font-display);font-weight:400;
+  font-size:clamp(24px,3.2vw,31px);letter-spacing:-.012em;line-height:1;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.stats small{
+  display:block;margin-top:9px;font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);line-height:1.5;
+}
+
+/* ══════════ TRUST BAR ══════════ */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2)}
+.trust .cap{
+  text-align:center;font-size:11px;font-weight:700;letter-spacing:.19em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:30px;
+}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.marquee ul{
+  display:flex;list-style:none;margin:0;padding:0;width:max-content;
+  animation:vslide var(--vdur,34s) linear infinite;
+  will-change:transform;transform:translate3d(0,0,0);
+}
+.marquee li{
+  display:flex;align-items:center;justify-content:center;height:52px;flex:none;
+  font-size:16px;font-weight:800;letter-spacing:-.02em;color:#6C7089;white-space:nowrap;
+}
+/* white-on-transparent client logos. Height is set per logo in the CLIENTS
+   array (they have very different aspect ratios); width follows the source
+   ratio so nothing is ever distorted. */
+.marquee li img{
+  width:auto;max-width:180px;object-fit:contain;
+  opacity:.9;display:block;
+}
+@media (max-width:620px){.marquee li img{transform:scale(.85)}}
+@media (prefers-reduced-motion:reduce){.marquee ul{animation:none}}
+
+/* ══════════ TINTED SECTION ══════════ */
+.tinted{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tinted::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 44% at 50% 0%,rgba(83,112,254,.13),transparent 70%);
+}
+.tinted>*{position:relative}
+
+/* ══════════ MECHANISM ══════════ */
+.mech{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,64px);align-items:center;margin-top:52px}
+.flow{display:grid;gap:9px}
+.flow .step{
+  display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--line);font-weight:700;font-size:15px;
+  letter-spacing:-.012em;color:var(--ink-2);
+}
+.flow .step i{
+  width:24px;height:24px;border-radius:7px;flex:none;display:grid;place-items:center;
+  font-size:10.5px;font-weight:800;font-style:normal;background:rgba(255,255,255,.08);color:var(--muted);
+}
+.flow .step.hot{
+  color:var(--ink);border-color:transparent;background:rgba(120,90,240,.14);
+  box-shadow:0 0 0 1.5px rgba(120,110,255,.7),0 14px 34px -16px rgba(120,90,240,.9);
+}
+.flow .step.hot i{background:var(--grad);color:#fff}
+.flow .arw{text-align:center;color:#3E4158;font-size:13px;line-height:1;margin:-3px 0}
+.mech-copy h3{margin-bottom:16px}
+.mech-copy p{color:var(--muted);margin:0 0 16px}
+.mech-copy .pull{
+  border-left:3px solid transparent;border-image:var(--grad) 1;
+  padding-left:20px;font-size:17.5px;font-weight:700;color:var(--ink);letter-spacing:-.02em;line-height:1.45;
+}
+
+/* ══════════ CREATIVE STRIP → seamless video marquee ══════════
+   The track holds N copies of the 6 videos, then the WHOLE track is duplicated
+   once. Every card carries its 16px gutter as margin-right (never `gap`), so the
+   track is exactly 2x one sequence and translate3d(-50%) lands pixel-perfect on
+   the identical frame. No snap, no gap. Duration is set in JS from the measured
+   width so the speed stays constant at every breakpoint.                        */
+.strip{
+  overflow:hidden;margin-top:46px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+}
+.strip .vtrack{
+  display:flex;list-style:none;margin:0;padding:0;width:max-content;
+  animation:vslide var(--vdur,60s) linear infinite;
+  will-change:transform;transform:translate3d(0,0,0);
+}
+@keyframes vslide{
+  from{transform:translate3d(0,0,0)}
+  to  {transform:translate3d(-50%,0,0)}
+}
+.strip .vtrack li{flex:none;width:clamp(150px,17vw,196px);margin-right:16px}
+.strip .vtrack video{
+  width:100%;aspect-ratio:9/16;object-fit:cover;display:block;border-radius:14px;
+  background:#0E0E16;
+  box-shadow:0 0 0 1px rgba(255,255,255,.08),0 22px 48px -20px rgba(0,0,0,.9);
+}
+/* paused by IntersectionObserver while the section is off-screen (perf) */
+.strip.is-paused .vtrack{animation-play-state:paused}
+
+@media (prefers-reduced-motion:reduce){
+  .strip{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .strip .vtrack{animation:none}
+}
+.strip-cap{text-align:center;margin-top:26px;font-size:13px;color:var(--faint)}
+
+/* ══════════ RECEIPTS NUMBERS ══════════ */
+.receipts{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-top:44px}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px 24px}
+.rcard b{
+  display:block;font-family:var(--font-display);font-weight:400;
+  font-size:clamp(28px,3.8vw,38px);letter-spacing:-.015em;line-height:1;text-transform:uppercase;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.rcard small{display:block;margin-top:13px;font-size:12.5px;font-weight:600;color:var(--muted);line-height:1.55}
+
+/* ══════════ CASE STUDIES → supplied infographic artwork ══════════ */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:48px}
+.case-graphic{
+  margin:0;padding:0;display:block;width:100%;cursor:zoom-in;
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--surface);box-shadow:var(--shadow);
+  appearance:none;-webkit-appearance:none;
+  transition:border-color .18s,transform .18s,box-shadow .18s;
+}
+.case-graphic img{width:100%;height:auto;display:block;object-fit:contain}
+.case-graphic:hover{border-color:var(--line-2);transform:translateY(-3px);
+  box-shadow:var(--shadow-lg)}
+.case-graphic:focus-visible{outline:2px solid #9FA6FF;outline-offset:3px}
+
+/* lightbox */
+.lb{
+  position:fixed;inset:0;z-index:120;display:none;place-items:center;padding:20px;
+  background:rgba(4,4,8,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+.lb.on{display:grid}
+.lb img{
+  max-width:min(560px,94vw);max-height:94vh;width:auto;height:auto;
+  border-radius:16px;box-shadow:0 40px 110px -30px #000;
+}
+.lb-close{
+  position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.08);color:#fff;
+  font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center;
+}
+.lb-close:hover{background:rgba(255,255,255,.16)}
+body.lb-open{overflow:hidden}
+
+/* ══════════ INCLUDED ══════════ */
+.inc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:46px}
+/* `> div` on purpose: a plain `.inc div` also matches the .n badge inside each
+   card, which made the badge inherit the card's padding and border. */
+.inc > div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+.inc > div b{display:block;font-size:16px;font-weight:800;letter-spacing:-.02em}
+.inc > div small{display:block;margin-top:8px;font-size:14px;color:var(--muted);line-height:1.55}
+.inc > div .n{
+  width:46px;height:46px;flex:none;padding:0;border:0;border-radius:14px;
+  background:var(--grad);color:#fff;
+  display:grid;place-items:center;font-size:17px;font-weight:800;line-height:1;
+  margin:0 auto 18px;                 /* centred across the card */
+  box-shadow:0 8px 22px -8px rgba(120,90,240,.9);
+}
+
+/* ══════════ TIMELINE ══════════ */
+.tl{margin-top:48px;display:grid;gap:0;position:relative}
+.tl::before{content:"";position:absolute;left:13px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,#5370FE,#FD66C5);opacity:.5;border-radius:2px}
+.tl .row{display:grid;grid-template-columns:28px 1fr;gap:20px;padding:13px 0;align-items:start}
+.tl .row i{
+  width:28px;height:28px;border-radius:50%;background:var(--bg-2);border:2px solid rgba(255,255,255,.16);
+  display:grid;place-items:center;font-size:9.5px;font-weight:800;color:var(--muted);font-style:normal;z-index:1;
+}
+.tl .row.on i{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 0 16px rgba(140,100,250,.8)}
+.tl .row b{display:block;font-size:16px;font-weight:800;letter-spacing:-.022em}
+.tl .row small{display:block;margin-top:4px;font-size:14.5px;color:var(--muted);line-height:1.55}
+
+/* ══════════ FAQ ══════════ */
+.faq{margin-top:44px;display:grid;gap:11px}
+.faq details{
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  transition:background .2s,border-color .2s;
+}
+.faq details[open]{background:var(--surface-2);border-color:var(--line-2);box-shadow:var(--shadow)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:22px 24px;display:flex;align-items:center;
+  justify-content:space-between;gap:18px;font-size:16.5px;font-weight:700;letter-spacing:-.02em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--line-2);
+  display:grid;place-items:center;font-size:17px;font-weight:400;color:#9FA6FF;background:rgba(255,255,255,.04);
+  transition:transform .22s;
+}
+.faq details[open] summary::after{content:"–";transform:rotate(180deg)}
+.faq .ans{padding:0 24px 24px;color:var(--muted);font-size:15.5px;line-height:1.65;max-width:64ch}
+
+/* ══════════ FINAL CTA ══════════ */
+.final{
+  width:min(820px,92vw);margin:0 auto;text-align:center;
+  background:linear-gradient(180deg,var(--surface),var(--bg-2));
+  border:1px solid var(--line-2);border-radius:28px;
+  padding:clamp(40px,5.5vw,68px) clamp(26px,5vw,64px);
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+}
+.final::before{
+  content:"";position:absolute;inset:auto -30% -60% -30%;height:320px;
+  background:radial-gradient(50% 100% at 50% 100%,rgba(120,90,240,.34),transparent 70%);
+}
+.final::after{
+  content:"";position:absolute;top:0;left:12%;right:12%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(159,166,255,.7),transparent);
+}
+.final>*{position:relative}
+.final p{color:var(--muted);margin:20px auto 0;max-width:52ch}
+.final .btn{margin-top:32px}
+
+/* ══════════ FOOTER ══════════ */
+footer{border-top:1px solid var(--line);padding:44px 0;margin-top:clamp(60px,8vw,100px);background:var(--bg-2)}
+footer .in{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+footer .tiny{max-width:none}
+
+/* ══════════ RESPONSIVE ══════════ */
+@media (max-width:900px){
+  .mech{grid-template-columns:1fr;gap:36px}
+  .cases{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .stats{grid-template-columns:1fr}
+  .stats div{border-right:0;border-bottom:1px solid var(--line);padding:20px 14px}
+  .stats div:last-child{border-bottom:0}
+  .enter-hint{display:none}
+  .q-body{min-height:0}
+  .btn{padding:17px 30px;font-size:12px;width:100%}
+  .q-nav{flex-direction:row}
+  .cont{padding:13px 22px}
+  .opt{padding:15px 16px;font-size:15.5px}
+}
+
+.cta-block{text-align:center;margin-top:clamp(38px,4.6vw,56px)}
+.cta-block .tiny{margin-top:15px}
+.hero .cta-block{margin-top:36px}
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="wrap">
+
+    <div class="brandbar">
+      <a class="logo" href="https://www.outworksocial.co.uk">
+        <img src="assets/logos/outwork-logo.png" alt="Outwork Social"
+             width="2048" height="449" fetchpriority="high">
+      </a>
+    </div>
+
+    <div class="center">
+      <span class="badge"><i class="dot"></i>For service businesses ready to stop relying on referrals</span>
+
+      <h1 style="margin-top:26px">
+        How we turn <span class="ital">one filming day</span> into a lead engine that fills your pipeline.
+      </h1>
+
+      <p class="lede">
+        It's called the Paid Video Lead Engine. 30 direct-response video ads, built and launched
+        on Meta, engineered to put qualified enquiries in front of your sales team, not just views.
+      </p>
+    </div>
+
+    <!-- VIMEO -->
+    <div class="video-shell">
+      <div class="video-frame" id="videoFrame">
+        <div class="video-ph" id="videoPh">
+          <div class="ring"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <b>Your Vimeo video sits here</b>
+          <small>Open this file, find <strong>VIMEO_ID</strong> near the top and paste your video's number in.</small>
+        </div>
+        <button class="unmute" id="unmute" hidden aria-label="Unmute video">
+          <span class="pill">
+            <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a6.8 6.8 0 0 1 0 13.4v2.1a8.9 8.9 0 0 0 0-17.6z"/></svg>
+            <b>Your video is playing<br>Click to unmute</b>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">Five questions. Under forty-five seconds. We reply within one working day.</p>
+    </div>
+
+    <!-- stat tiles -->
+    <div class="stats">
+      <div><b>£1M+</b><small>Revenue driven</small></div>
+      <div><b>14×</b><small>Average return on ad spend</small></div>
+      <div><b>7M+</b><small>Impressions delivered</small></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ TRUST ══════════ -->
+<section class="trust pad-sm">
+  <div class="wrap">
+    <p class="cap">Campaigns built &amp; managed for</p>
+    <div class="marquee"><ul id="marquee"></ul></div>
+  </div>
+</section>
+
+<!-- ══════════ RECEIPTS + CREATIVE STRIP ══════════ -->
+<section class="pad">
+  <div class="wrap center">
+    <span class="kicker">Our own results</span>
+    <h2>£25,078 in ad spend.<br><span class="ital">£271,685</span> in new revenue.</h2>
+    <p class="lede">Over the last 12 months, that's what this exact system produced. It was built, launched
+      and managed in-house by our team.</p>
+  </div>
+
+  <div class="strip"><ul id="strip"></ul></div>
+  <p class="strip-cap">Recent client ads: direct response, testimonial and educational creative.</p>
+
+  <div class="wrap">
+    <div class="receipts">
+      <div class="rcard"><b>30</b><small>Full-funnel video creatives per quarter: 12 direct sales, 8 testimonial, 6 educational, 4 brand awareness</small></div>
+      <div class="rcard"><b>1 day</b><small>On location with a director and videographer. Everything scripted and signed off beforehand</small></div>
+      <div class="rcard"><b>28 days</b><small>From first brainstorm call to campaigns going live in your ad account</small></div>
+      <div class="rcard"><b>90 days</b><small>Of active management. We test the hooks, cut the losers and scale the winners</small></div>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">See what these numbers would look like against your margins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CASE STUDIES ══════════ -->
+<section class="pad tinted">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker">Client results</span>
+      <h2>Real campaigns. <span class="ital">Real numbers.</span></h2>
+      <p class="lede">Four accounts we built, launched and managed. Every figure below came out of the ad account.</p>
+    </div>
+
+    <!-- Supplied infographic artwork. Swap the files in /assets/case-studies
+         to update a case study; nothing else needs to change. -->
+    <div class="cases">
+      <button type="button" class="case-graphic" data-lb
+        aria-label="Enlarge the Hooked Boxing case study">
+        <img src="assets/case-studies/hooked-boxing.webp" width="1024" height="1536" loading="lazy" decoding="async"
+          alt="Hooked Boxing: £2,000 ad spend became £56,829 revenue influenced. £15 per lead, 21 programmes sold, £20,937 in month one, 28.4x total ROAS.">
+      </button>
+
+      <button type="button" class="case-graphic" data-lb
+        aria-label="Enlarge the AB&amp;C Insurance case study">
+        <img src="assets/case-studies/abc-insurance.webp" width="1024" height="1536" loading="lazy" decoding="async"
+          alt="AB&amp;C Insurance: 429 leads from £1,000 in 23 days. £2.33 per lead, 54 policies sold, £18.52 spend per policy, £21,600 commission revenue, 21.6x ROAS.">
+      </button>
+
+      <button type="button" class="case-graphic" data-lb
+        aria-label="Enlarge the Downeys Kia case study">
+        <img src="assets/case-studies/downeys-kia.webp" width="1024" height="1536" loading="lazy" decoding="async"
+          alt="Downeys Kia Newtownards: 878 test drive enquiries for an EV event. £9,984 ad spend at £11.03 per lead, producing a full diary of local high-intent test drives.">
+      </button>
+
+      <button type="button" class="case-graphic" data-lb
+        aria-label="Enlarge the Tadhg Hawes Motor Parts case study">
+        <img src="assets/case-studies/tadhg-hawes-motor-parts.webp" width="1024" height="1536" loading="lazy" decoding="async"
+          alt="Tadhg Hawes Motor Parts: 750,000+ impressions in County Cork from £1,250 spend, 5 new trade accounts, approximately €200,000 in potential annual trade revenue.">
+      </button>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">Five questions tells us whether your numbers can do the same.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MECHANISM ══════════ -->
+<section class="pad">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">The mechanism</span>
+      <h2>How ad spend becomes <span class="ital">customers</span>,<br>not impressions.</h2>
+      <p class="lede">Most video agencies make brand content and hope it converts later. We build direct
+        response upfront, so every ad is engineered to get one specific person to raise their hand.</p>
+    </div>
+
+    <div class="mech">
+      <div class="flow">
+        <div class="step"><i>1</i>Video ad</div><div class="arw">↓</div>
+        <div class="step"><i>2</i>The right person stops</div><div class="arw">↓</div>
+        <div class="step"><i>3</i>The message creates interest</div><div class="arw">↓</div>
+        <div class="step"><i>4</i>Clear call to action</div><div class="arw">↓</div>
+        <div class="step hot"><i>5</i>Lead form inside Facebook &amp; Instagram</div><div class="arw">↓</div>
+        <div class="step hot"><i>6</i>Pre-qualified enquiry</div><div class="arw">↓</div>
+        <div class="step"><i>7</i>Your sales team</div><div class="arw">↓</div>
+        <div class="step"><i>8</i>New customer</div>
+      </div>
+
+      <div class="mech-copy">
+        <h3>Four principles behind every script we write.</h3>
+        <p><strong>1. Call out the right person.</strong> The ad should make your buyer think
+          <em>"this is for me"</em> in the first two seconds, using a specific problem, situation or outcome.</p>
+        <p><strong>2. Lead with what they want.</strong> Customers care about more customers, more revenue
+          and less hassle. Your service is just the mechanism that gets them there.</p>
+        <p><strong>3. Give them a reason to believe.</strong> Proof, results, testimonials, experience,
+          a clear process. Attention on its own isn't enough.</p>
+        <p><strong>4. Make the next step obvious.</strong> Get a quote. Book a call. Request an assessment.
+          If the viewer doesn't know what to do next, the ad hasn't finished its job.</p>
+        <p class="pull">The goal isn't attention.<br>The goal is new customers.</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">We'll map the mechanism to your business on the call. Free, fit or no fit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHAT'S INCLUDED ══════════ -->
+<section class="pad tinted">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">The offer</span>
+      <h2>Everything you need to generate leads<br>for the <span class="ital">next 90 days.</span></h2>
+      <p class="lede">We install and manage the complete system. You show up for one filming day.</p>
+    </div>
+
+    <div class="inc">
+      <div><div class="n">01</div><b>30× video creatives</b><small>Full-funnel, created specifically for paid advertising, not repurposed brand content.</small></div>
+      <div><div class="n">02</div><b>1× full production day</b><small>On location at your business with a director and videographer. Eight structured hours.</small></div>
+      <div><div class="n">03</div><b>Strategy, messaging &amp; scripting</b><small>Angles, offers, hooks and scripts planned and signed off before anyone picks up a camera.</small></div>
+      <div><div class="n">04</div><b>3 months Meta ads management</b><small>We build, launch, manage and optimise every campaign across Facebook and Instagram.</small></div>
+      <div><div class="n">05</div><b>Lead generation system</b><small>Ads, in-app lead forms, targeting and pre-qualification, plugged into your CRM and sales process.</small></div>
+      <div><div class="n">06</div><b>Monthly lead reporting</b><small>Clear visibility on spend, leads and campaign performance. No black boxes.</small></div>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">£3,500 per month, three-month minimum. We'll walk you through it properly on the call.</p>
+    </div>
+
+    <div class="center" style="margin-top:56px">
+      <span class="eyebrow">Timeline</span>
+      <h2 style="font-size:clamp(25px,3.4vw,36px)">Live in approximately <span class="ital">28 days.</span></h2>
+    </div>
+
+    <div class="narrow">
+      <div class="tl">
+        <div class="row on"><i>D1</i><span><b>Brainstorm &amp; ICP call</b><small>One hour on Google Meet to define who we're targeting and what they actually want.</small></span></div>
+        <div class="row"><i>D2</i><span><b>Customer &amp; market research</b><small>Two days of research, messaging development and script development.</small></span></div>
+        <div class="row"><i>D3</i><span><b>Scripts delivered</b><small>Hooks, angles and full scripts across all four creative types.</small></span></div>
+        <div class="row"><i>D5</i><span><b>Scripts reviewed</b><small>One-hour call to walk through everything together.</small></span></div>
+        <div class="row"><i>D7</i><span><b>Signed off + shoot planned</b><small>Scripts refined and fully approved. Shoot planning completed the same day.</small></span></div>
+        <div class="row on"><i>D14</i><span><b>Filming day</b><small>Eight hours on location. Multiple hooks and variations filmed for every angle.</small></span></div>
+        <div class="row on"><i>D28</i><span><b>Campaigns go live</b><small>Final assets delivered and approved. Then 90 days of active testing, optimising and scaling.</small></span></div>
+      </div>
+
+      <div class="cta-block">
+        <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+        <p class="tiny">The 28 days start the moment we lock your filming date.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="pad">
+  <div class="narrow">
+    <div class="center">
+      <span class="eyebrow">Frequently asked</span>
+      <h2>The <span class="ital">short</span> answers.</h2>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary>Who is this actually for?</summary>
+        <div class="ans">Service businesses turning over £20k a month or more, with a sales process already in place,
+          who want a predictable flow of qualified enquiries into it rather than relying on referrals and word of mouth.
+          If you're earlier stage than that, say so on the form. We run a done-with-you consultancy that fits better
+          and costs a lot less.</div>
+      </details>
+      <details>
+        <summary>What exactly do I get?</summary>
+        <div class="ans">30 full-funnel video creatives, one full production day on location, all the strategy,
+          messaging and scripting that sits behind them, three months of Meta ads management, the lead generation
+          system itself (ads, lead forms, targeting, pre-qualification) and monthly lead reporting.</div>
+      </details>
+      <details>
+        <summary>Why 30 videos and not one really good one?</summary>
+        <div class="ans">Because we don't want to bet your entire ad spend on a single idea. Different customers
+          respond to different things: the problem, the outcome, the offer, proof, education. Thirty videos give
+          Meta something to actually test, so real customer behaviour tells us what works instead of us guessing.</div>
+      </details>
+      <details>
+        <summary>How much should I budget for ad spend?</summary>
+        <div class="ans">We recommend £6,000 across 90 days, which typically equates to your ads being shown
+          500,000+ times. The practical minimum to get clean data is £1,000 a month. Ad spend is paid directly
+          to Meta and sits separately from our fee.</div>
+      </details>
+      <details>
+        <summary>How is it priced?</summary>
+        <div class="ans">£3,500 per month with a three-month minimum, which is £10,500 for the full 90-day engine,
+          including the filming day and all 30 creatives.</div>
+      </details>
+      <details>
+        <summary>Why a 3-month minimum?</summary>
+        <div class="ans">Because the system needs a full test-and-scale cycle to work. Month one is launch and
+          hook testing, month two is identifying winners and cutting losers, month three is scaling spend behind
+          what's proven. Stopping at 30 days means paying for the learning and none of the return.</div>
+      </details>
+      <details>
+        <summary>Does this replace my current marketing person?</summary>
+        <div class="ans">No. We become your video ad production and Meta ads team. It plugs into your existing
+          setup. CRM integration, sales team alignment and lead handling process are part of the build.</div>
+      </details>
+      <details>
+        <summary>What happens on the filming day?</summary>
+        <div class="ans">Eight structured hours at your business or a location of your choice, with a director
+          guiding delivery and a videographer filming. Everything is scripted and approved beforehand, so the day
+          is about capturing multiple hooks and variations, plus b-roll of your service actually being carried out.</div>
+      </details>
+    </div>
+
+    <div class="cta-block">
+      <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+      <p class="tiny">Still got questions? Ask them on the call. It's a conversation, not a pitch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINAL CTA ══════════ -->
+<section class="pad" style="padding-top:0">
+  <div class="final">
+    <span class="eyebrow">Last step</span>
+    <h2>We run a limited number of<br><span class="ital">filming days</span> each month.</h2>
+    <p>Every engine takes a shoot day, a production crew and three months of hands-on account management,
+      so we can only run a handful at a time. If the pipeline is the bottleneck in your business, take one of them.</p>
+    <p>Answer five questions and you'll get a free 90-day lead plan on the call: your ideal customer,
+      your offer, your campaign angles. Yours to keep, fit or no fit.</p>
+    <a href="apply.html" class="btn" data-apply>Book your strategy call</a>
+  </div>
+</section>
+
+<!-- case study lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Case study detail">
+  <button type="button" class="lb-close" aria-label="Close">&times;</button>
+  <img alt="">
+</div>
+
+<footer>
+  <div class="wrap in">
+    <a class="logo" href="https://www.outworksocial.co.uk">
+      <img src="assets/logos/outwork-logo.png" alt="Outwork Social"
+           width="2048" height="449" loading="lazy">
+    </a>
+    <p class="tiny">© <span id="yr"></span> Outwork Social · Paid Video Lead Engine · Results shown are from live client ad accounts and are not a guarantee of future performance.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var C = window.CONFIG || {};
+
+/* ═══ VIMEO ═══ */
+(function video(){
+  var frame=document.getElementById('videoFrame'),
+      ph=document.getElementById('videoPh'),
+      un=document.getElementById('unmute');
+  if(!C.VIMEO_ID) return;
+  var src='https://player.vimeo.com/video/'+encodeURIComponent(C.VIMEO_ID)+
+          (C.VIMEO_HASH?'?h='+encodeURIComponent(C.VIMEO_HASH)+'&':'?')+
+          'autoplay=1&muted=1&loop=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1';
+  var f=document.createElement('iframe');
+  f.src=src; f.allow='autoplay; fullscreen; picture-in-picture';
+  f.setAttribute('allowfullscreen',''); f.title='Paid Video Lead Engine';
+  frame.insertBefore(f,ph); ph.remove(); un.hidden=false;
+  un.addEventListener('click',function(){
+    try{
+      f.contentWindow.postMessage(JSON.stringify({method:'setVolume',value:1}),'*');
+      f.contentWindow.postMessage(JSON.stringify({method:'setCurrentTime',value:0}),'*');
+      f.contentWindow.postMessage(JSON.stringify({method:'play'}),'*');
+    }catch(e){}
+    un.style.opacity='0';
+    setTimeout(function(){un.hidden=true;},260);
+  });
+})();
+
+/* ═══ MARQUEES (client logos + video reel) ═══════════════════════════════
+   Shared seamless-loop builder. Every item carries its gutter as margin-right
+   (never CSS `gap`), so the rendered track is EXACTLY two identical halves and
+   translate3d(-50%) lands on the same pixel. No snap, no gap at the wrap point.
+   Enough copies are laid down to overfill the widest viewport, and the duration
+   is derived from the measured width so speed is constant everywhere.        */
+var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function buildMarquee(ul, items, makeItem, gap, speed, maxReps){
+  function layout(){
+    ul.innerHTML = '';
+    // 1. lay one sequence down and measure it
+    items.forEach(function(it,i){ ul.appendChild(makeItem(it,i)); });
+    var seqW = 0;
+    [].forEach.call(ul.children, function(li){
+      li.style.marginRight = gap + 'px';
+      seqW += li.getBoundingClientRect().width + gap;
+    });
+    if(!seqW) return;
+    var cardW = seqW / items.length;
+    var need  = (ul.parentElement.clientWidth || window.innerWidth) + cardW;
+    var reps  = Math.min(maxReps, Math.max(1, Math.ceil(need / seqW)));
+
+    // 2. rebuild: `reps` sequences, then the whole thing again for the loop
+    ul.innerHTML = '';
+    for(var half=0; half<2; half++){
+      for(var r=0; r<reps; r++){
+        items.forEach(function(it,i){
+          var li = makeItem(it,i);
+          li.style.marginRight = gap + 'px';
+          if(half===1) li.setAttribute('aria-hidden','true');
+          ul.appendChild(li);
+        });
+      }
+    }
+    // 3. constant speed: duration = distance travelled / px-per-second
+    ul.style.setProperty('--vdur', (seqW * reps / speed).toFixed(2) + 's');
+    return reps;
+  }
+
+  var sig = null;
+  function maybeLayout(){
+    var s = Math.round((ul.parentElement.clientWidth || window.innerWidth) / 40);
+    if(s === sig) return;          // ignore mobile URL-bar / scrollbar jitter
+    sig = s; layout();
+    if(ul.dataset.kind === 'video') wireVideos(ul);
+  }
+  maybeLayout();
+  var t; window.addEventListener('resize', function(){
+    clearTimeout(t); t = setTimeout(maybeLayout, 250);
+  }, {passive:true});
+}
+
+/* ── client logos ── */
+/* Client names as text. The logo PNGs are still in /assets/logos if you ever
+   want them back: give an entry a `logo:'assets/logos/x.png'` and an `h:` height
+   and the builder below will render the image instead of the name. */
+var CLIENTS = [
+  {name:'AB&C Insurance'},
+  {name:'Downeys Kia'},
+  {name:'Tadhg Hawes Motor Parts'},
+  {name:'North Down Implant & Orthodontic Clinic'},
+  {name:'Hooked Boxing'},
+  {name:'Lollybox Young Drivers'}
+];
+
+buildMarquee(document.getElementById('marquee'), CLIENTS, function(c){
+  var li = document.createElement('li');
+  if(c.logo){
+    var im = new Image();
+    im.src = c.logo; im.alt = c.name; im.loading = 'lazy'; im.decoding = 'async';
+    im.style.height = (c.h || 44) + 'px';
+    li.appendChild(im);
+  } else {
+    li.textContent = c.name;
+  }
+  return li;
+}, 60, 34, 3);
+
+/* ── video reel: 6 client ads ── */
+var VIDEOS = [
+  {id:'abc',    file:'assets/videos/1-abc-insurance',           label:'AB&C Insurance ad'},
+  {id:'tadhg',  file:'assets/videos/2-tadhg-hawes-motor-parts', label:'Tadhg Hawes Motor Parts ad'},
+  {id:'ndd',    file:'assets/videos/3-north-down-dental',       label:'North Down Dental ad'},
+  {id:'kia',    file:'assets/videos/4-downeys-kia',             label:'Downeys Kia ad'},
+  {id:'bee',    file:'assets/videos/5-bee-solar',               label:'Bee Solar ad'},
+  {id:'wmp',    file:'assets/videos/6-workmate-pro',            label:'Workmate Pro ad'}
+];
+
+function makeVideo(v){
+  var li = document.createElement('li');
+  li.dataset.clip = v.id;
+  var el = document.createElement('video');
+  el.muted = true; el.defaultMuted = true; el.loop = true; el.playsInline = true;
+  el.setAttribute('muted','');   el.setAttribute('loop','');
+  el.setAttribute('playsinline',''); el.setAttribute('webkit-playsinline','');
+  el.setAttribute('disableremoteplayback','');
+  el.disablePictureInPicture = true;
+  el.controls = false; el.tabIndex = -1;
+  el.setAttribute('aria-label', v.label);
+  if(reduceMotion.matches){
+    el.preload = 'metadata';       // first frame only, nothing moves
+  } else {
+    el.preload = 'auto'; el.autoplay = true; el.setAttribute('autoplay','');
+  }
+  // MP4/H.264 first: every current browser takes this one and it is the smaller
+  // file. The WebM is only reached by a browser without H.264 (rare). If you
+  // would rather not host them, deleting the .webm files changes nothing.
+  [['.mp4','video/mp4'], ['.webm','video/webm']].forEach(function(s){
+    var src = document.createElement('source');
+    src.src = v.file + s[0]; src.type = s[1];
+    el.appendChild(src);
+  });
+  li.appendChild(el);
+  return li;
+}
+
+/* ── PLAYBACK CONTROL ──────────────────────────────────────────────────
+   Two things decide whether a card should be playing:
+     a) is the reel on screen at all?      (vertical scroll)
+     b) is that card near the reel's edges? (horizontal cull, saves decoding
+        two dozen videos at once on a wide monitor)
+   Both feed ONE apply() pass. Previously the section observer paused
+   everything on scroll-away but nothing restarted it, because the horizontal
+   observer never re-fires on a vertical scroll, so the reel stayed frozen. */
+var nearView = new Set();
+var sectionVisible = true;
+var cardObserver = null;
+
+function applyPlayback(){
+  var host = document.querySelector('.strip');
+  if(host) host.classList.toggle('is-paused', !sectionVisible);
+  [].forEach.call(document.querySelectorAll('.strip video'), function(v){
+    var shouldPlay = sectionVisible && !reduceMotion.matches &&
+                     (nearView.size === 0 || nearView.has(v));
+    if(shouldPlay){
+      if(v.paused){ var pr = v.play(); if(pr && pr.catch) pr.catch(function(){}); }
+    } else if(!v.paused){
+      v.pause();
+    }
+  });
+}
+
+function wireVideos(ul){
+  if(reduceMotion.matches) return;
+  if(cardObserver) cardObserver.disconnect();
+  nearView.clear();
+  cardObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting) nearView.add(e.target); else nearView.delete(e.target);
+    });
+    applyPlayback();
+  }, {root: ul.parentElement, rootMargin: '0px 300px', threshold: 0});
+  [].forEach.call(ul.querySelectorAll('video'), function(v){ cardObserver.observe(v); });
+}
+
+var strip = document.getElementById('strip');
+strip.className = 'vtrack';
+strip.dataset.kind = 'video';
+buildMarquee(strip, VIDEOS, makeVideo, 16, 46, 3);
+
+/* Reel off-screen → pause animation and playback. Back on screen → resume. */
+(function watchSection(){
+  var host = document.querySelector('.strip');
+  if(!host || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function(es){
+    sectionVisible = es[0].isIntersecting;
+    applyPlayback();
+  }, {threshold: 0, rootMargin: '200px 0px'}).observe(host);
+
+  // Coming back from another tab also needs a nudge.
+  document.addEventListener('visibilitychange', function(){
+    if(!document.hidden) applyPlayback();
+  });
+})();
+
+/* ═══ CASE STUDY LIGHTBOX ═══ */
+(function lightbox(){
+  var box = document.getElementById('lb');
+  if(!box) return;
+  var img = box.querySelector('img'), last = null;
+
+  function open(src, alt){
+    img.src = src; img.alt = alt;
+    box.classList.add('on'); document.body.classList.add('lb-open');
+    box.querySelector('.lb-close').focus();
+  }
+  function close(){
+    box.classList.remove('on'); document.body.classList.remove('lb-open');
+    img.removeAttribute('src');
+    if(last) last.focus();
+  }
+  [].forEach.call(document.querySelectorAll('[data-lb]'), function(btn){
+    btn.addEventListener('click', function(){
+      var i = btn.querySelector('img');
+      last = btn; open(i.currentSrc || i.src, i.alt);
+    });
+  });
+  box.addEventListener('click', function(e){
+    if(e.target === box || e.target.closest('.lb-close')) close();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && box.classList.contains('on')) close();
+  });
+})();
+
+/* ═══ APPLY LINKS — carry UTMs across to the quiz page ═══ */
+(function links(){
+  var base = C.APPLY_URL || 'apply.html';
+  var qs = location.search || '';
+  [].forEach.call(document.querySelectorAll('[data-apply]'), function(a){
+    a.href = base + (qs ? (base.indexOf('?')>-1 ? '&'+qs.slice(1) : qs) : '');
+  });
+})();
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
